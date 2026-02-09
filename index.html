@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,33 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
     <header class="flex justify-between items-center p-10 bg-gray-100">
         <h1 class="text-3xl font-bold text-center my-4">Employee Management App</h1>
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add Employee</button>
     </header>
+    <main class="p-6 bg-gray-50 border-2 border-gray-200 rounded-lg m-6 box-border flex gap-6 ">
+        <!-- Employee List -->
+        <div class="w-[30%] border-r-2 border-r-gray-300 pr-4 box-border">
+            <h2 class="text-center border-b-2 border-b-black p-2 m-2 text-xl font-bold box-border">Employee List</h2>
+            <ul id="employee-list" class="space-y-4">
+                
+                <!-- Employee items will be dynamically added here -->
+
+            </ul>
+        </div>
+        <!-- Employee details -->
+        <div class="w-[70%] ">
+            <h2 class="text-center border-b-2 border-b-black p-2 m-2 text-xl font-bold box-border">Employee Details</h2> 
+            <div id="employee-details" class="p-4 m-2 border-2 border-gray-300 rounded-lg box-border">
+                <!-- Employee details will be dynamically displayed here -->
+
+            </div>
+        </div>
+    </main>
+    <!-- add employee modal -->
 </body>
 <script src="app.js"></script>
+
 </html>
